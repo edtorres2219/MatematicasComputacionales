@@ -1,0 +1,292 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\title{Matemáticas Computacionales \\ Practica 1: Gráficas de curvas en R}
+\author{1941431 Torres Jiménez José Eduardo}
+\date{16 de Febrero del 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+\subsection{Desarrollo de la practica}
+En esta primera práctica se hará una de las cosas básicas al momento de aprender R. Se repasaran las curvas en $\mathbb{R}^2$
+vistas en primer semestre en la materia de Geometría Analítica. [1].
+Se graficarán curvas como la recta, parábola, circunferencia, elipse e hipérbola.
+
+\section{Curvas de $\mathbb{R}^2$ }
+\subsection{Linea Recta}
+\textbf{Def.} Llamamos \textbf{linea recta} al lugar geométrico de los puntos tales que tomados dos puntos diferentes cualesquiera $P_1$($x_1$, $y_1$) y $P_2$($x_2$, $y_2$) de lugar, el valor de m se calcula por medio de:
+
+\begin{equation}
+m = \frac{y_1-y_2}{x_1-x_2}
+\end{equation}
+
+\textbf{Ecuación de la recta dada su pendiente y ordenada en el origen} Es la recta cuya pendiente \textbf{m} y cuya ordenada en el origen es \textbf{b}, que tiene por ecuación:
+
+\begin{equation}
+y = mx+b
+\end{equation}
+
+\textbf{Código en R}
+\newline Para poder graficar esta función, solo basta con darle valor a la pendiente \textbf{m} y su ordenada \textbf{b}, además falta establecer un limites que serán el extremo al que llegara nuestra función.
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoRecta1.JPG}
+\caption{Código de la linea 1}
+\label{fig:mesh1}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaRecta1.JPG}
+\caption{Gráfica del código 1}
+\label{fig:mesh2}
+\end{figure}
+
+\textbf{Ejemplo 2:}
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoRecta2.JPG}
+\caption{Código de la linea 2}
+\label{fig:mesh3}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaRecta2.JPG}
+\caption{Gráfica del código 2}
+\label{fig:mesh4}
+\end{figure}
+
+\subsection{Circunferencia}
+\textbf{Def.} Circunferencia es el lugar geométrico de un punto que se mueve en un plano de tal manera que se conserva siempre a una distancia constante de un punto fijo de ese plano
+
+\textbf{Teorema}La circunferencia cuyo centro es el punto (h,k) y cuyo radio es la constante r, tiene por ecuación:
+
+\begin{equation}
+(x-h)^2 + (y-k)^2 = r^2
+\end{equation}
+
+\textbf{Código en R}
+\newline Para poder graficar esta función, solo basta con darle valor al centro con \textbf{h} y \textbf{k}
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoCircunferencia1.JPG}
+\caption{Código de la linea 1}
+\label{fig:mesh5}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaCircunferencia1.JPG}
+\caption{Gráfica del código 1}
+\label{fig:mesh6}
+\end{figure}
+
+\textbf{Ejemplo 2:}
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoCircunferencia2.JPG}
+\caption{Código de la linea 2}
+\label{fig:mesh7}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaCircunferencia2.JPG}
+\caption{Gráfica del código 2}
+\label{fig:mesh8}
+\end{figure}
+
+\subsection{Parábola}
+\textbf{Def.} Una parábola es un lugar geométrico de un punto que se mueve en un plano de tal manera que su distancia de una recta fija, situada en el plano, es siempre igual a su distancia de un punto fijo del plano y que no pertenece a la recta.
+\newline
+\textbf{Las ecuaciones con vértice en el origen}
+\begin{equation}
+y^2 = 4px
+\end{equation}
+
+\begin{equation}
+x^2 = 4py
+\end{equation}
+\newline
+\textbf{Las ecuaciones con vértice fuera del origen}
+
+\begin{equation}
+(y-k)^2 = 4p(x-h)
+\end{equation}
+
+\begin{equation}
+(x-h)^2 = 4p(y-k)
+\end{equation}
+
+\textbf{Código en R}
+\newline Para poder graficar esta función, solo basta con darle valor a \textbf{x} y a \textbf{y}, además falta establecer un limites que serán el extremo al que llegara nuestra función.
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoParabola1.JPG}
+\caption{Código de la linea 1}
+\label{fig:mesh9}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaParabola1.JPG}
+\caption{Gráfica del código 1}
+\label{fig:mesh10}
+\end{figure}
+
+\textbf{Ejemplo 2:}
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoParabola2.JPG}
+\caption{Código de la linea 2}
+\label{fig:mesh11}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaParabola2.JPG}
+\caption{Gráfica del código 2}
+\label{fig:mesh12}
+\end{figure}
+
+\subsection{Elipse}
+\textbf{Def.}Una elipse es el lugar geométrico de un punto que se mueve en un plano de tal manera que la suma de sus distancias a dos fijos de ese plano es siempre igual a una constante, mayor que la distancia entre los dos puntos.
+\newline
+\textbf{Las ecuaciones con vértice en el origen}
+\begin{equation}
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+\end{equation}
+
+\begin{equation}
+\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1
+\end{equation}
+\newline
+\textbf{Las ecuaciones con vértice fuera del origen}
+\begin{equation}
+\frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1
+\end{equation}
+
+\begin{equation}
+\frac{(x-h)^2}{b^2} + \frac{(y-k)^2}{a^2} = 1
+\end{equation}
+
+\textbf{Código en R}
+\newline Para poder graficar esta función, solo basta con darle valor a las ecuaciones y sus vertices.
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoElipse1.JPG}
+\caption{Código de la linea 1}
+\label{fig:mesh13}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaElipse1.JPG}
+\caption{Gráfica del código 1}
+\label{fig:mesh14}
+\end{figure}
+
+\textbf{Ejemplo 2:}
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoElipse2.JPG}
+\caption{Código de la linea 2}
+\label{fig:mesh15}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaElipse2.JPG}
+\caption{Gráfica del código 2}
+\label{fig:mesh16}
+\end{figure}
+
+\subsection{Hipérbola}
+\textbf{Def.} Una hipérbola es el lugar geométrico de un punto que se mueve en un plano de tal manera que el valor absoluto de la diferencia de sus distancias a dos puntos fijos del plano, llamados focos, es siempre igual a una cantidad constante, positiva y menor que la distancia entre los focos
+\newline
+\textbf{Ecuaciones con vértice en el origen}
+
+\begin{equation}
+\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1
+\end{equation}
+
+\begin{equation}
+\frac{x^2}{b^2} - \frac{y^2}{a^2} = 1
+\end{equation}
+\newline
+\textbf{Ecuaciones con vértice fuera del origen}
+\begin{equation}
+\frac{(x+h)^2}{a^2} - \frac{(y+k)^2}{b^2} = 1
+\end{equation}
+
+\begin{equation}
+\frac{(x+h)^2}{b^2} - \frac{(y+k)^2}{a^2} = 1
+\end{equation}
+
+\textbf{Código en R}
+\newline Para poder graficar esta función, solo basta con darle valor a la \textbf{h} y a \textbf{k}, además falta establecer un limites que serán el extremo al que llegara nuestra función.
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoHiperbola1.JPG}
+\caption{Código de la linea 1}
+\label{fig:mesh17}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaHiperbola1.JPG}
+\caption{Gráfica del código 1}
+\label{fig:mesh18}
+\end{figure}
+
+\textbf{Ejemplo 2:}
+\newpage
+
+\begin{figure}
+\raggedright
+\includegraphics[width=15cm, height=5cm]{CodigoHiperbola2.JPG}
+\caption{Código de la linea 2}
+\label{fig:mesh19}
+\end{figure}
+y su gráfica seria:
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm, height=5cm]{GraficaHiperbola2.JPG}
+\caption{Gráfica del código 2}
+\label{fig:mesh20}
+\end{figure}
+
+\begin{thebibliography}{0}
+\bibitem{Lemhann,1965} Charles H. Lemhann. Geometria Analitica, 1965.
+
+\end{thebibliography}
+\textcolor{blue}{\url{https://github.com/edtorres2219/MatematicasComputacionales}}
+\href{https://github.com/edtorres2219/MatematicasComputacionales}{\textcolor{blue}{Repositorio de Github}}
+\end{document}
